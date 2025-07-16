@@ -915,10 +915,7 @@
 
 /*** Footer Start ***/
 .footer {
-    background: linear-gradient(rgba(0, 18, 72, 0.9), rgba(0, 18, 72, 1)), url(../img/footer-img.jpg);
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: #000 !important;
 }
 .footer .footer-item a {
     line-height: 35px;
@@ -947,6 +944,13 @@
 .footer .footer-item .footer-btn a:hover i {
     color: var(--bs-primary) !important;
 }
+.footer-contact-info {
+    color: #fff !important;
+}
+.footer-arabic-brand {
+    font-size: 45px !important;
+    color: #fff !important;
+}
 /*** Footer End ***/
 
 /*** copyright Start ***/
@@ -961,15 +965,18 @@
     line-height: 1.1;
 }
 
-.topbar .text-muted {
-    font-size: 13px !important;
+.topbar,
+.topbar .text-muted,
+.topbar a,
+.topbar i,
+.topbar .btn {
+    color: #fff !important;
 }
-
-.footer-arabic-brand {
-    color: #fd7e14 !important; /* matches .text-secondary */
-    font-size: 28px !important;
-    font-weight: bold;
-    letter-spacing: 1px;
+.topbar a {
+    color: #fff !important;
+}
+.topbar .btn {
+    border-color: #fff !important;
 }
 
 .navbar .navbar-brand-text span:last-child {
@@ -1010,9 +1017,9 @@ body {
     width: auto;
   }
   .navbar .navbar-brand img {
-    margin-right: 8px !important;
-    margin-bottom: 0 !important;
-    height: 50px !important;
+    height: 100px !important;
+    width: 100px !important;
+    object-fit: contain;
   }
   .navbar .navbar-brand h1 {
     font-size: 20px !important;
@@ -1022,6 +1029,9 @@ body {
   .navbar-toggler {
     margin-top: 0 !important;
     position: static !important;
+  }
+  .navbar .d-flex.w-100.justify-content-between {
+    justify-content: space-around !important;
   }
 }
 
