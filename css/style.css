@@ -915,7 +915,10 @@
 
 /*** Footer Start ***/
 .footer {
-    background: #000 !important;
+    background: linear-gradient(rgba(0, 18, 72, 0.9), rgba(0, 18, 72, 1)), url(../img/footer-img.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .footer .footer-item a {
     line-height: 35px;
@@ -935,6 +938,7 @@
 .footer .footer-item .footer-btn a,
 .footer .footer-item .footer-btn a i {
     transition: 0.5s;
+    
 }
 
 .footer .footer-item .footer-btn a:hover {
@@ -947,6 +951,13 @@
 .footer-contact-info {
     color: #fff !important;
 }
+
+.footer-contact-info .fa-map-marker-alt {
+    white-space: nowrap !important;
+    font-size: 28px !important;
+}
+
+
 .footer-arabic-brand {
     font-size: 30px !important;
     color: #fff !important;
@@ -1007,7 +1018,9 @@ body {
 }
 
 @media (min-width: 992px) {
-  .navbar .d-flex.w-100,
+  .navbar .d-flex.w-100 {
+    justify-content: space-between !important;
+  }
   .navbar .navbar-brand {
     flex-direction: row !important;
     align-items: center !important;
@@ -1065,6 +1078,19 @@ body {
     margin-top: 28px;
     position: static;
   }
+}
+
+.topbar .text-muted.me-4,
+.footer .fa-map-marker-alt {
+    white-space: nowrap !important;
+    overflow: auto !important;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.topbar .d-flex,
+.footer .footer-item {
+    flex-wrap: wrap !important;
 }
 
 

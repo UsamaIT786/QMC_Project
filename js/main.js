@@ -34,10 +34,10 @@
         dots: true,
         loop: true,
         margin: 25,
-        nav : true,
+        nav : false,
         navText : [
-            '<i class="fa fa-angle-right"></i>',
-            '<i class="fa fa-angle-left"></i>'
+            '<span style="font-size:2rem;">&lt;</span>',
+            '<span style="font-size:2rem;">&gt;</span>'
         ],
         responsiveClass: true,
         responsive: {
